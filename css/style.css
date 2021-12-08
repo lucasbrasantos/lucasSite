@@ -1,0 +1,54 @@
+/*///////////////////////////////////////*//*
+			 _____  _____ _____ 
+			/  __ \/  ___/  ___|
+			| /  \/\ `--.\ `--. 
+			| |     `--. \`--. \
+			| \__/\/\__/ /\__/ /
+			 \____/\____/\____/ 
+                    
+*//*///////////////////////////////////////*/
+
+/* CoolColors
+#f9f9f9
+#edf3f9
+*/
+
+:root{
+	--bgColor: #edf3f9;
+}
+
+*{
+	font-family: 'Roboto', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: var(--bgColor);
+	min-height: 100vh;
+}
+
+/*/////////=CSS=///////////*/
+
+nav{
+	display: flex;
+	justify-content: center;
+	padding: 1vw 0;
+	background: #fff;
+	text-transform: uppercase;
+	font-size: 1.6vw;
+}
+
+section{
+	margin-top: 5vw;
+	padding: 2vw 4vw;
+	background: #fff;
+}
+
+hr{
+	margin: .8vw 0;
+}
+
+/*/////////=CSS=///////////*/
+
+
+/*////////////////////////////////////////
