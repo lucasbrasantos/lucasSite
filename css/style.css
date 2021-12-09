@@ -15,13 +15,16 @@
 
 :root{
 	--bgColor: #edf3f9;
+	--fontColor: #9a9a9a;
 }
 
 *{
+	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
 	padding: 0;
 	margin: 0;
 }
+
 body{
 	background: var(--bgColor);
 	min-height: 100vh;
@@ -29,25 +32,143 @@ body{
 
 /*/////////=CSS=///////////*/
 
-nav{
+#menu{
+	position: relative;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
 	padding: 1vw 0;
-	background: #fff;
+	background: #262626;
 	text-transform: uppercase;
+	font-size: 1.6vw;
+	color: var(--fontColor);
+	box-shadow: .2vw 0 1vw rgba(0,0,0, 50%);
+}
+
+.items a:nth-child(-n+2){
+	margin-right: 3vw;
+}
+
+.links{
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: var(--fontColor);
+	transition: .3s
+}
+
+.links:hover{
+	color: #fff;
+	transform: scale(1.15);
+}
+
+
+#bgImage{
+	background-image: url(../img/img01.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 35vw;
+}
+
+.gradient{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, rgba(0,0,0, 80%), rgba(0,0,0, 20%));
+	color: #fff;
+}
+
+.title, .subtitle{
+	margin-left: 10vw;
+}
+
+.subtitle{
+	color: #aaa;
+	font-size: 1.2vw;
+	text-transform: capitalize;
+	animation: dropdownSubtitle 2s;
+	position: relative;
+	overflow: hidden;
+	transition: 1s;
+}
+
+.gradient hr{
+	position: relative;
+	left: 10vw;
+	margin: .5vw 0;
+	width: 52.2vw;
+}
+
+.line{
+	display: block;
+	font-family: monospace;
+	text-transform: lowercase;
+   	font-size: 5vw;
+    text-align: center;
+    border-right: solid 2px rgba(255,255,255,0.7);
+    white-space: nowrap;
+    overflow: hidden;
+    height: 2.1ch;
+    width: 0;
+    animation:
+    	digitando 3s steps(19) 2s,
+    	cursor 1000ms steps(19) infinite;
+}
+
+@keyframes digitando {
+    0%{
+    	width: 0;
+    }
+    100%{
+    	width: 19ch;
+	}
+}
+@keyframes cursor {
+    0%{
+    	border-right-color: rgba(255,255,255,0.7);
+    }
+    100%{
+    	border-right-color: transparent;
+    }
+}
+@keyframes dropdownSubtitle{
+	0%{
+		top: -20%;
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		top: 0%;
+		opacity: 1;
+	}
+}
+
+
+#content{
+	height: 100%;
+	background: #202020;
+	box-shadow: 0 -1vw 4vw rgba(0,0,0, 20%);
+}
+
+
+.section1{
+	width: 100%;
+	padding: 4vw 12vw;
+	color: #aaa;
 	font-size: 1.6vw;
 }
 
-section{
-	margin-top: 5vw;
-	padding: 2vw 4vw;
-	background: #fff;
+.section1 hr{
+	margin-top: .2rem;
+	margin-bottom: 0.8em;
 }
-
-hr{
-	margin: .8vw 0;
-}
-
 /*/////////=CSS=///////////*/
 
 
