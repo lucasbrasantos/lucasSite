@@ -11,10 +11,12 @@
 /* CoolColors
 #f9f9f9
 #edf3f9
+#262626
+#9a9a9a
 */
 
 :root{
-	--bgColor: #edf3f9;
+	--bgColor: #262626;
 	--fontColor: #9a9a9a;
 }
 
@@ -91,17 +93,20 @@ body{
 	color: #aaa;
 	font-size: 1.2vw;
 	text-transform: capitalize;
-	animation: dropdownSubtitle 2s;
+	animation: dropdownSubtitle 3s 0s;
 	position: relative;
 	overflow: hidden;
 	transition: 1s;
+	margin-top: 1.4vw;
 }
 
 .gradient hr{
-	position: relative;
+	display: none;
+	position: absolute;
 	left: 10vw;
-	margin: .5vw 0;
-	width: 52.2vw;
+	width: 0;
+	animation:
+		linha 3s ease-in-out 0s;
 }
 
 .line{
@@ -114,6 +119,7 @@ body{
     white-space: nowrap;
     overflow: hidden;
     height: 2.1ch;
+    margin-bottom: 0.6vw;
     width: 0;
     animation:
     	digitando 3s steps(19) 2s,
@@ -149,25 +155,52 @@ body{
 		opacity: 1;
 	}
 }
+@keyframes linha{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 52.2vw;
+	}
+}
 
 
 #content{
 	height: 100%;
-	background: #202020;
 	box-shadow: 0 -1vw 4vw rgba(0,0,0, 20%);
 }
 
 
-.section1{
+#section1{
 	width: 100%;
 	padding: 4vw 12vw;
 	color: #aaa;
+	background: #202020;
 	font-size: 1.6vw;
 }
 
-.section1 hr{
+#section1 hr{
 	margin-top: .2rem;
 	margin-bottom: 0.8em;
+}
+
+#section2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3vw;
+	width: 100%;
+	height: 80vh;
+	padding: 4vw 2vw;
+	background: #323232;
+
+}
+
+.box{
+	background: #545454;
+	width: 26vw;
+	height: 22vw;
+	border-radius: 2vw;
 }
 /*/////////=CSS=///////////*/
 

@@ -14,4 +14,6 @@
 setTimeout(() => {
 	document.querySelector('.line').innerHTML = "Lucas Braga Santos!";
 	document.querySelector('.line').style.width = '19ch';
+	document.querySelector('.lineHr').style.display = 'block';
+	document.querySelector('.lineHr').style.width = '52.2vw';
 }, 2100)
