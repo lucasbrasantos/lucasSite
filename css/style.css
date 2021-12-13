@@ -186,23 +186,188 @@ body{
 
 #section2{
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 3vw;
+	flex-direction: column;
 	width: 100%;
-	height: 80vh;
+	height: 78vw;
 	padding: 4vw 2vw;
 	background: #323232;
+}
 
+#section2 h1{
+	text-align: center;
+	margin-bottom: 4vw;
+	color: #eee;
+	font-size: 3.6vw;
+}
+
+#section2 button{
+	cursor: pointer;
+	margin: 6vw auto;
+	padding: 1vw 4vw;
+	color: white;
+	background: #00BC8B;
+	font-size: 2vw;
+	outline: none;
+	border: none;
+	border-radius: 1.8vw;
+	text-align: center;
+	transition: .3s;
+	box-shadow: .3vw .3vw .8vw rgba(0,0,0, 40%);
+}
+
+#section2 button:hover{
+	background: #00AE81;
+	transform: scale(1.08);
+	box-shadow: 0 0.5vw .8vw -0.4vw rgba(0,175,150, 100%);
+	transform: translateY(-0.5vw);
+}
+
+#section2 button:active{
+	background: #56C396;
+	transform: scale(.98);
+	box-shadow: none;
+}
+
+.sla{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 3vw;
 }
 
 .box{
+	position: relative;
 	background: #545454;
 	width: 26vw;
 	height: 22vw;
 	border-radius: 2vw;
+	overflow: hidden;
+	box-shadow: .3vw .3vw .8vw rgba(0,0,0, 10%);
 }
-/*/////////=CSS=///////////*/
+
+.icon{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: tomato;
+	transition: .4s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+}
+
+.box:hover .icon{
+	top: 1.4vw;
+	left: calc(50% - 4vw);
+	width: 8vw;
+	height: 8vw;
+	border-radius: 100%;
+	box-shadow: .3vw .3vw .8vw rgba(0,0,0, 30%);
+}
+
+.icon ion-icon{
+	font-size: 6vw;
+	color: #fff;
+	transition: .3s
+}
+
+.box:hover .icon ion-icon{
+	font-size: 3vw;
+}
+
+.inside{
+	position: relative;
+	padding: 2vw;
+	color: #fff;
+	text-align: center;
+	margin-top: 8vw;
+	z-index: 1;
+	transform: scale(0);
+	transition: .5s;
+	transition-delay: 0s;
+}
+
+.box:hover .inside{
+	transform: scale(1);
+	transition-delay: .2s;
+}
+
+.inside h2{
+	text-transform: capitalize;
+	font-size: 1.5vw;
+	margin-top: 1vw;
+	margin-bottom: 1.4vw;
+}
+
+.inside p{
+	padding: 0 2vw;
+	font-size: 1vw;
+	font-weight: 300;
+	line-height: 1em
+}
+
+#section2 .vermais{
+	margin: 0;
+	background: #C651F4;
+	margin-top: 1.4vw;
+	padding: 1vw 2vw;
+	font-size: 1vw;
+}
+
+#section2 .vermais:hover{
+	background: #BD27D8;
+	box-shadow: none;
+	transform: scale(1.1);
+}
+
+#section2 .vermais:active{
+	background: #B558D9;
+	box-shadow: .3vw .3vw .8vw rgba(0,0,0, 10%);
+	transform: scale(.9);
+}
+
+#section2 .disabled{
+	font-size: 1.2vw;
+	background: tomato;
+	text-decoration: line-through;
+	transition: .4s;
+	transform: scale(1);
+}
+
+#section2 .disabled:hover{
+	background: #FF4321;
+	transform: scale(1);
+}
+
+#section2 .shake{
+	animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+	transform: translate3d(0, 0, 0);
+	perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+/*////////=CSS=///////////*/
 
 
 /*////////////////////////////////////////
