@@ -27,6 +27,10 @@
 	margin: 0;
 }
 
+html{
+	scroll-behavior: smooth !important;
+}
+
 body{
 	background: var(--bgColor);
 	min-height: 100vh;
@@ -188,7 +192,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	height: 78vw;
+	height: auto;
 	padding: 4vw 2vw;
 	background: #323232;
 }
@@ -372,7 +376,7 @@ footer{
 	width: 100%;
 	min-height: 10vw;
 	padding: 2vw 10vw;
-	background: #2861BB;
+	background: #3586FF;
 
 	display: flex;
 	align-items: center;
@@ -432,12 +436,63 @@ footer p{
 
 footer .wave{
 	position: absolute;
-	top: 0;
+	top: -8.5vw;
 	left: 0;
 	bottom: 0;
 	right: 0;
 	width: 100%;
-	height: 10vw;;
+	height: 9vw;
+	background: url(../img/wave.png);
+	background-size: 100vw 9vw;
+	pointer-events: none;
+}
+
+footer .wave#wave1{
+	z-index: 1000;
+	opacity: 1;
+	bottom: 0;
+	animation: animWave 5s linear infinite;
+}
+
+@keyframes animWave{
+	0%{
+		background-position-x: 100vw; 
+	}
+
+	100%{
+		background-position-x: 0vw; 
+	}
+}
+
+footer .wave#wave2{
+	z-index: 999;
+	opacity: .4;
+	bottom: 0;
+	animation: animWave2 4s linear infinite;
+}
+
+@keyframes animWave2{
+	0%{
+		background-position-x: 0vw; 
+	}
+
+	100%{
+		background-position-x: 100vw; 
+	}
+}
+
+footer .wave#wave3{
+	z-index: 998;
+	opacity: .6;
+	bottom: 0;
+	animation: animWave 4s linear infinite;
+}
+
+footer .wave#wave4{
+	z-index: 997;
+	opacity: .2;
+	bottom: 0;
+	animation: animWave2 6s linear infinite;
 }
 
 /*////////=CSS=///////////*/
