@@ -15,7 +15,7 @@ setTimeout(() => {
 	document.querySelector('.line').innerHTML = "Lucas Braga Santos!";
 	document.querySelector('.line').style.width = '19ch';
 	document.querySelector('.lineHr').style.display = 'block';
-	document.querySelector('.lineHr').style.width = '52.2vw';
+	document.querySelector('.lineHr').style.width = '19ch';
 }, 2100)
 
 const iconColors = [

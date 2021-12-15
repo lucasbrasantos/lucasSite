@@ -22,7 +22,7 @@
 				<h1>Lucas Braga Santos</h1>
 
 				<div class="items">
-					<a class="links" href="#">home</a>
+					<a class="links active" href="#">home</a>
 					<a class="links" href="#projectsTitle">projects</a>
 					<a class="links" href="#">contact</a>
 				</div>
@@ -39,8 +39,8 @@
 				</div>
 				<hr class="lineHr">
 				<div class="subtitle">
-					<h2>beginner at web developing</h2>
-					<h2>html, css and js</h2>
+					<h2>iniciante em desenvolvimento web</h2>
+					<h2>html, css, javascript</h2>
 				</div>
 			</div>
 		</div>
@@ -48,14 +48,14 @@
 
 		<div id="content">
 			<section id="section1">
-				<h1>About Me!</h1>
+				<h1>um pouco sobre mim!</h1>
 				<hr>
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam accusantium voluptates dolores neque totam perferendis praesentium ab sunt nostrum facilis fuga unde, debitis perspiciatis iure odit sequi nulla similique quo.</p>
+				<p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Corporis nam assumenda atque odit id laboriosam, vitae, ducimus quia temporibus architecto quis, commodi ipsam asperiores impedit facilis cupiditate magni repellat reiciendis?</p>
 			</section>
 
 
-			<section id="section2">
-				<h1 id="projectsTitle">Some Projects!</h1>
+			<section id="section2" class="sectionA">
+				<h1 id="projectsTitle">Meus projetos!</h1>
 				<div class="sla">
 					<div class="box">
 						<div class="icon" id="icon1">
@@ -63,8 +63,8 @@
 						</div>
 						<div class="inside">
 							<h2>javascript games</h2>
-							<p>jogos ultilizando principalmente javascript, um pouco de html e css</p>
-							<button class="vermais">ver mais</button>
+							<p>games codificados em javascript</p>
+							<button class="vermais" onclick="window.location.href='projects.html#javascriptGames';">ver mais</button>
 						</div>
 					</div>
 					<div class="box">
@@ -73,8 +73,8 @@
 						</div>
 						<div class="inside">
 							<h2>html projects</h2>
-							<p>projetos ultilizando html, css, javascript</p>
-							<button class="vermais">ver mais</button>
+							<p>projetos ultilizando html, css e js</p>
+							<button class="vermais" onclick="window.location.href='projects.html#htmlProjects';">ver mais</button>
 						</div>
 					</div>
 					<div class="box">
@@ -87,6 +87,7 @@
 							<button class="vermais">ver mais</button>
 						</div>
 					</div>
+				<!-- 
 					<div class="box">
 						<div class="icon" id="icon4">
 							<ion-icon name="alert-circle-outline"></ion-icon>
@@ -117,8 +118,9 @@
 							<button class="vermais disabled" onclick="buttonShake()">See project</button>
 						</div>
 					</div>
+				-->
 				</div>
-				<button>Ver mais</button>
+				<button onclick="window.location.href='projects.html';">Ver mais</button>
 			</section>
 			<footer>
 				<div class="waves">
@@ -134,21 +136,21 @@
 						</a>
 					</li>
 					<li>
-						<a href="https://twitter.com/ShermanoLucas">
+						<a href="https://twitter.com/ShermanoLucas/" target=":blank">
 							<ion-icon name="logo-twitter"></ion-icon>
 						</a>
 					</li>
 					<li>
-						<a href="https://www.linkedin.com/in/lucasbrasantos/">
+						<a href="https://www.linkedin.com/in/lucasbrasantos/" target=":blank">
 							<ion-icon name="logo-linkedin"></ion-icon>
 						</a>
 					</li>
 				</ul>
 				<ul class="menu">
 					<li><a href="#">home</a></li>
-					<li><a href="#">projects</a></li>
-					<li><a href="#">about me</a></li>
-					<li><a href="#">contact</a></li>
+					<li><a href="projects.html">projetos</a></li>
+					<li><a href="#">sobre mim</a></li>
+					<li><a href="#">contato</a></li>
 				</ul>
 				<p>&copy; Lucas Braga Santos 2021</p>
 			</footer>
