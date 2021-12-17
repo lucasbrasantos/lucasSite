@@ -11,7 +11,10 @@ h1 {
 	color:#603A03;
 }
 
-body {
+body{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 	background-image:url(../imgs/fundo.jpg);
 	background-size: cover;
 	background-position: center;
@@ -19,7 +22,7 @@ body {
 }
 
 #container{
-	width:950px;
+	margin: 4vw 0;
 	height:auto;
 	position:relative;
 	margin-left:auto;
