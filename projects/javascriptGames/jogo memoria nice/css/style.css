@@ -1,0 +1,210 @@
+/*///////////////////////////////////////*//*
+			 _____  _____ _____ 
+			/  __ \/  ___/  ___|
+			| /  \/\ `--.\ `--. 
+			| |     `--. \`--. \
+			| \__/\/\__/ /\__/ /
+			 \____/\____/\____/ 
+                    
+*//*///////////////////////////////////////*/
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	display: flex;
+	background: #90D7FF;
+
+	font-family: 'Roboto', sans-serif;
+}
+/*/////////=CSS=///////////*/
+
+.memory-game{
+	height: 96vh;
+	width: 50vw;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	perspective: 1000px;
+}
+
+.card{
+	height: calc(13.5vw);
+	width: calc(11.7vw);
+	margin: .4vw;
+	position: relative;
+	box-shadow: .2vw .2vw .3vw rgba(0, 0, 0, 50%);
+	cursor: pointer;
+	transform: scale(.98);
+	border-radius: 1vw;
+	transition: .3s;
+	transform-style: preserve-3d;
+	user-select: none;
+}
+
+.card-front,
+.card-back{
+	height: 100%;
+	width: 100%;
+	padding: .2vw;
+	position: absolute;
+	border-radius: 1vw;
+	background: #fff;
+}
+
+.card:hover{
+	transform: scale(1.04);
+}
+.card:active{
+	transform: scale(.95);
+	transition: .1s
+}
+
+
+.card-front{
+	transform: rotateY(180deg);
+}
+.card.flip{
+	transform: rotateY(180deg);
+}
+
+
+.gameOver{
+	display: none;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 10;
+	background: radial-gradient(rgba(255, 255, 255, 40%), rgba(200, 200, 200, 60%));
+	background: radial-gradient(rgba(0, 0, 0, 10%), rgba(0, 0, 0, 60%));
+	transition: 1s;
+}
+
+.startGame{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 10;
+	background: radial-gradient(rgba(255, 255, 255, 40%), rgba(200, 200, 200, 60%));
+	background: radial-gradient(rgba(0, 0, 0, 10%), rgba(0, 0, 0, 60%));
+	transition: 1s;
+}
+
+.msg{
+	color: white;
+	text-shadow: .2vw .2vw .4vw black;
+	text-align: center;
+	height: 24vw;
+	width: 40vw;
+	padding: 3vw;
+	border-radius: 2vw;
+	border: .5vw solid black;
+	background: rgba(215, 115, 248, 90%);
+}
+
+.playBtn, .startBtn{
+	text-transform: uppercase;
+	font-size: 2vw;
+	padding: 0.7vw 1.8vw;
+	border-radius: 1vw;
+	outline: none;
+	border: none;
+	transition: .3s;
+	box-shadow: .2vw .2vw .6vw rgba(0,0,0, 80%);
+	background-color: #6C6FFF;
+	font-weight: 300;
+	cursor: pointer;
+}
+
+.playBtn:hover, .startBtn:hover, .restartBtn:hover{
+	transform: scale(1.2);
+	box-shadow: .1vw .1vw .6vw rgba(0,0,0, 50%);
+}
+
+.playBtn:active, .startBtn:hover, .restartBtn:active{
+	transform: scale(.95);
+	box-shadow: none;
+}
+
+.msg h1{
+	text-transform: uppercase;
+	font-size: 3vw;
+	margin-bottom: 5vw;
+}
+
+#time{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-transform: uppercase;
+	font-size: 2vw;
+	margin-top: 2vw;
+}
+
+.realTimeTimer{
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	background: #6690FB;
+	padding: 1vw 2vw;
+	width: 13vw;
+	border-radius: 0 0 .8vw .8vw;
+	font-size: 1.5vw;
+	font-weight: 500;
+	left: 4vw;
+}
+
+.restartBtn, .scoreBtn{
+	position: absolute;
+	padding: 1vw 2vw;
+	text-transform: uppercase;
+	border-radius: 1vw;
+	outline: none;
+	border: none;
+	transition: .3s;
+	box-shadow: .2vw .2vw .6vw rgba(0,0,0, 80%);
+	top: 20vh;
+	font-size: 1.1vw;
+	left: 4.7vw;
+	cursor: pointer;
+}
+
+.scoreBtn{
+	top: 28vh;
+	left: 3.1vw;
+}
+
+.scoreboard{
+	position: absolute;
+	width: 20vw;
+	height: 54vh;
+	top: 40vh;
+	left: -1vw;
+	border-radius: 0 2vw 2vw 0;
+	border: .2vw solid black;
+	padding: 1vw 2vw;
+	background: rgba(255, 255, 255, 90%);
+}
+
+.scoreboard p{
+	font-size: 1.4vw;
+	font-weight: 500;
+	padding: 0.1em;
+}
+
+.scoreboard h2{
+	text-align: center;
+}
+/*/////////=CSS=///////////*/
+
+
+/*////////////////////////////////////////

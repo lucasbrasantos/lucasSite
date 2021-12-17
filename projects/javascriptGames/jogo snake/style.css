@@ -1,0 +1,74 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'RocknRoll One';
+}
+
+body{
+	font-size: 26px;
+	text-align: center;
+	background: #F4F9D4;
+	height: auto;
+	margin-top: 8vw;
+	padding: 2vw 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#snake{
+	width: 40vw;
+	height: 40vw;
+	border: .4vw solid black;
+	margin-top: 0;
+}
+
+.game h1{
+	font-size: 3vw;
+	margin-bottom: 2vw;
+}
+
+.texto-lado{
+	width: 10vw;
+	margin-left: 10vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.texto-lado img{
+	width: 100%;
+}
+
+.texto-lado p{
+	font-size: 2vw;
+}
+
+
+@media (max-width: 1000px){
+	body{
+		flex-direction: column;
+	}
+
+	#snake{
+		width: 50vw;
+		height: 50vw;
+	}
+
+	.texto-lado{
+		width: 20vw;
+		margin-top: 4vw;
+		margin-left: 0;
+	}
+
+	.texto-lado p{
+		font-size: 3vw;
+	}
+
+	.game h1{
+		font-size: 4vw;
+	}
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Jogo da memoria - Lucas</title>
+		<link rel="icon" href="">
+
+		<!-- styles -->
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<!-- ///////////////////////////// -->
+
+		<div class="startGame">
+			<div class="msg">
+				<h1>Iniciar Jogo!</h1>
+				<button class="startBtn" onclick="startGame()">Jogar</button>
+			</div>
+		</div>
+		<div class="gameOver">
+			<div class="msg">
+				<h1>Jogar Novamente</h1>
+				<button class="playBtn" onclick="gameOver()">Jogar</button>
+				
+				<div id="time">
+					<span id="hour">00</span>
+					<p>:</p>
+					<span id="minute">00</span>
+					<p>:</p>
+					<span id="second">00</span>
+					<p>:</p>
+					<span id="millisecond">000</span>
+				</div>
+			</div>
+		</div>
+		<div class="realTimeTimer">
+			<span id="hour2">00</span>
+			<p>:</p>
+			<span id="minute2">00</span>
+			<p>:</p>
+			<span id="second2">00</span>
+			<p>:</p>
+			<span id="millisecond2">000</span>
+		</div>
+		<button onclick="resetGame()" class="restartBtn">Restart Game</button>
+		<button onclick="clearScore()" class="scoreBtn">Clear Scoreboard</button>
+		<div class="scoreboard">
+			<h2>SCOREBOARD</h2>
+			<p id="score1"></p>
+			<p id="score2"></p>
+			<p id="score3"></p>
+			<p id="score4"></p>
+			<p id="score5"></p>
+			<p id="score6"></p>
+			<p id="score7"></p>
+			<p id="score8"></p>
+			<p id="score9"></p>
+			<p id="score10"></p>
+		</div>
+		<main class="memory-game">
+			<div class="card" data-card="luigi" id="item1">
+				<img src="img/luigi.png" alt="face da carta" class="card-front" draggable="false">
+				<img src="img/box.png" alt="verso da carta" class="card-back" draggable="false">
+			</div>
+			<div class="card" data-card="mario" id="item2">
+				<img src="img/mario.png" alt="face da carta" class="card-front" draggable="false">
+				<img src="img/box.png" alt="verso da carta" class="card-back" draggable="false">
+			</div>
+			<div class="card" data-card="peach" id="item3">
+				<img src="img/peach.png" alt="face da carta" class="card-front" draggable="false">
+				<img src="img/box.png" alt="verso da carta" class="card-back" draggable="false">
+			</div>
+			<div class="card" data-card="toad" id="item4">
+				<img src="img/toad.png" alt="face da carta" class="card-front" draggable="false">
+				<img src="img/box.png" alt="verso da carta" class="card-back" draggable="false">
+			</div>
+			<div class="card" data-card="yoshi" id="item5">
+				<img src="img/yoshi.png" alt="face da carta" class="card-front" draggable="false">
+				<img src="img/box.png" alt="verso da carta" class="card-back" draggable="false">
+			</div>
+			<div class="card" data-card="bowser" id="item6">
+				<img src="img/bowser.png" alt="face da carta" class="card-front" draggable="false">
+				<img src="img/box.png" alt="verso da carta" class="card-back" draggable="false">
+			</div>
+			<!--/////////////////-->
+			<div class="card" data-card="luigi" id="item7">
+				<img src="img/luigi.png" alt="face da carta" class="card-front" draggable="false">
+				<img src="img/box.png" alt="verso da carta" class="card-back" draggable="false">
+			</div>
+			<div class="card" data-card="mario" id="item8">
+				<img src="img/mario.png" alt="face da carta" class="card-front" draggable="false">
+				<img src="img/box.png" alt="verso da carta" class="card-back" draggable="false">
+			</div>
+			<div class="card" data-card="peach" id="item9">
+				<img src="img/peach.png" alt="face da carta" class="card-front" draggable="false">
+				<img src="img/box.png" alt="verso da carta" class="card-back" draggable="false">
+			</div>
+			<div class="card" data-card="toad" id="item10">
+				<img src="img/toad.png" alt="face da carta" class="card-front" draggable="false">
+				<img src="img/box.png" alt="verso da carta" class="card-back" draggable="false">
+			</div>
+			<div class="card" data-card="yoshi" id="item11">
+				<img src="img/yoshi.png" alt="face da carta" class="card-front" draggable="false">
+				<img src="img/box.png" alt="verso da carta" class="card-back" draggable="false">
+			</div>
+			<div class="card" data-card="bowser" id="item12">
+				<img src="img/bowser.png" alt="face da carta" class="card-front" draggable="false">
+				<img src="img/box.png" alt="verso da carta" class="card-back" draggable="false">
+			</div>
+		</main>
+
+		
+
+		<!-- ///////////////////////////// -->
+
+		<script type="text/javascript" src="js/main.js"></script>
+
+	</body>
+</html>
+
+<!-- /////////////////////////////
+
+	 _   _ ________  ___ _     
+	| | | |_   _|  \/  || |    
+	| |_| | | | | .  . || |    
+	|  _  | | | | |\/| || |    
+	| | | | | | | |  | || |____
+	\_| |_/ \_/ \_|  |_/\_____/
+	                           
+
+////////////////////////////// -->
