@@ -1,0 +1,37 @@
+@media screen and (max-width: 1060px){
+	.button{
+	  font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 880px){
+	.button{
+	  font-size: 14px;
+	}
+
+	.footer{
+		font-size: 10px;
+	}
+
+	h1{
+		font-size: 30px;
+	}
+
+	h2{ font-size: 20px;
+
+	}
+}
+
+@media screen and (max-width: 620px){
+	h1{
+		font-size: 24px;
+	}
+
+	img{
+		height: 30px;
+	}
+
+	#mostrador{
+		width: 255px;
+	}
+}

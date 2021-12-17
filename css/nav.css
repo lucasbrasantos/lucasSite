@@ -1,0 +1,55 @@
+:root{
+	--bgColor: #262626;
+	--fontColor: #9a9a9a;
+}
+
+#menu h1, a{
+	font-family: 'Roboto', sans-serif;
+}
+
+#menu{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	padding: 2vw 0;
+	background: #262626;
+	text-transform: uppercase;
+	font-size: 1.6vw;
+	color: var(--fontColor);
+	box-shadow: .2vw 0 1vw rgba(0,0,0, 50%);
+}
+
+.items a:nth-child(-n+2){
+	margin-right: 3vw;
+}
+
+.links{
+
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: var(--fontColor);
+	transition: .3s
+}
+
+.links:hover{
+	color: #fff;
+	transform: scale(1.15);
+}
+
+.active{
+	color: #eaeaea;
+}
+
+@media (max-width: 1000px){
+
+	.links{
+		font-size: 2.8vw;
+	}
+}

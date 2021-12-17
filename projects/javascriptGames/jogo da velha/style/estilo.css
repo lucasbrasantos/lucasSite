@@ -1,0 +1,158 @@
+body{
+	font-family: 'roboto', Arial;
+	font-weight: 300;
+	font-size: 20px;
+	background-image: url(../imgs/montanhavetorial.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+.body2{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(255,255,255,20%);
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+#mostrador h1{
+	float: left;
+	margin: 0 0;
+}
+
+#mostrador img{
+	margin-left: 20px;
+}
+
+#mostrador{
+	margin-top: 30px;
+	width: 412px;
+	text-align: justify;
+	display: inline-flex;
+}
+
+.espaco{
+	height: 65px;
+	width: 80px;
+	border: 3px solid black;
+	float: left;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.tabuleiro{
+	width: 258px;
+	height: 258px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.button{
+  background-color: #00C9A7;
+  color: white;
+  padding: 14px 40px;
+  margin-bottom: 60px;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 30%;
+  margin-right: auto;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: auto;
+  border-radius: 50px;
+  transition: 0.3s;
+
+}
+
+.button:hover{;
+	box-shadow: none;
+	background: #78cbf2;
+}
+
+.footer{
+	color: #fff;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
+
+.pontuacao ul{
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+}
+
+.pontuacao li{
+  display: inline;;
+}
+
+.pontuacao ul li a{
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.container, .container2{
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	width: 48%;
+	align-content: space-between;
+}
+
+.container{
+	float: left;
+	background-color: rgba(192,151,255, 50%);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 30px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.container2{
+	margin: 0;
+	float: right;
+}
+
+.body2{
+	color: #000;
+}
+
+.swal-overlay {
+  background-color: rgba(0,0,0,20%);
+}
+
+.swal-modal{
+	background-color: rgba(255,255,255,70%);
+}
+
+.swal-button{
+	border: none;
+	background: none;
+	background: #00C9A7;
+	text-decoration: none;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+	transition: 0.3s;
+	border-radius: 50px;
+
+}
+
+.swal-button:hover{
+	background: #78cbf2;
+	box-shadow: none;
+}
+
+.swal-button:focus{
+	box-shadow: none;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+}

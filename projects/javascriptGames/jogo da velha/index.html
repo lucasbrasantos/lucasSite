@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Jogo da Velha</title>
+		<link rel="shortcut icon" href="imgs/favicon.ico"/>
+		<link rel="stylesheet" href="style/estilo.css">
+		<link rel="stylesheet" href="style/responsive.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="body2">
+			
+			<div class="container">
+				
+				<div id="mostrador">
+					<h1>VEZ DO JOGADOR:</h1>
+					<img src="" border="0" height="50" alt="">
+				</div>					
+
+				<div class="pontuacao" >
+					<ul>
+						<h2>Placar:</h2>
+	  					X = <li><a id="pontos1">0</a></li>
+	  					<br><br>
+	  					O = <li><a id="pontos2">0</a></li>
+	  					<br><br>
+	  					Velha = <li><a id="pontos3">0</a></li>
+					</ul>	
+				</div>
+			</div>
+
+			<div class="container2">
+				<div>
+					<a class="button" onclick="reset()">Resetar Pontuação</a>
+				</div>
+
+				<div class="tabuleiro" >
+					<div id="a1" class="espaco" jogada=""></div>
+					<div id="a2" class="espaco" jogada=""></div>
+					<div id="a3" class="espaco" jogada=""></div>
+
+					<div id="b1" class="espaco" jogada=""></div>
+					<div id="b2" class="espaco" jogada=""></div>
+					<div id="b3" class="espaco" jogada=""></div>
+
+					<div id="c1" class="espaco" jogada=""></div>
+					<div id="c2" class="espaco" jogada=""></div>
+					<div id="c3" class="espaco" jogada=""></div>
+				</div>	
+			</div>
+
+			<div class="footer">
+				<div class="linha">
+					<footer>
+						<div class="coluna col12">
+							<span>&copy; 2021 - Lucas | Jogo Da Velha</span>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script type="text/javascript" src="js/script.js" ></script>
+</html>

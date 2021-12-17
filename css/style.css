@@ -79,6 +79,7 @@ body{
 	background-attachment: fixed;
 	background-size: cover;
 	height: 35vw;
+	transition: 2s
 }
 
 .gradient{
@@ -506,5 +507,90 @@ footer .wave#wave4{
 
 /*////////=CSS=///////////*/
 
+
+/*////////=RESPONSIVE=///////////*/
+
+@media(max-width: 1000px){
+
+	#menu{
+		padding: 3vw 0;
+		font-size: 4vw;
+		flex-direction: column;
+	}
+
+	.items{
+		margin-top: 2vw;
+	}
+
+	#bgImage{
+		background-size: 100vw 50vh;
+		height: 50vw;
+	}
+
+	.gradient .subtitle{
+		font-size: 2.2vw;
+		margin-top: 2vw;
+	}
+
+	#bgImage .line{
+		font-size: 7vw;
+	}
+
+	#bgImage .lineHr{
+		font-size: 7vw;
+	}
+
+	#section1{
+		padding: 6vw 12vw;
+		font-size: 2.8vw;
+	}
+
+	#projectsTitle{
+		font-size: 4.4vw;
+	}
+
+	.box{
+		width: 36vw;
+		height: 32vw;
+	}
+
+	.icon ion-icon{
+		font-size: 10vw;
+	}
+
+	.inside h2{
+		margin-top: 2vw;
+		font-size: 3vw;
+	}
+
+	.inside p{
+		font-size: 2.6vw;
+	}
+
+	#section2 .inside button{
+		border-radius: 3vw;
+		padding: 1.4vw 2.4vw;
+		font-size: 2.4vw;
+		margin-top: 1.6vw;
+	}
+
+	#section2 .vermaisB{
+		padding: 2vw 3vw;
+		border-radius: 5vw;
+		font-size: 4vw;
+	}
+
+	footer .icons li a{
+		font-size: 4vw;
+	}
+
+	footer .menu li a{
+		font-size: 3vw;
+	}
+
+	footer p{
+		font-size: 2.6vw;
+	}
+}
 
 /*////////////////////////////////////////
