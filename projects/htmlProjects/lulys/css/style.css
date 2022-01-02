@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('../imgs/pizza1.jpg');
+
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+
+	animation: fundo 15s infinite 2s ease-out;
+	transition: 2s;
+
+}
+
+@keyframes fundo{
+	0% {background-image: url('../imgs/pizza1.jpg');}
+	25% {background-image: url('../imgs/pizza2.jpg');}
+	50% {background-image: url('../imgs/pizza3.jpg');}
+	75% {background-image: url('../imgs/pizza4.jpg');}
+	100% {background-image: url('../imgs/pizza1.jpg');}
+}
+.container1{
+	background: rgba(0, 0, 0, 30%);
+}
+
+.header img{
+    width: 100px;
+    height: 100px;
+}
+
+/* grid 960px */
+.linha{
+	width: 960px;
+	margin: 0 auto;
+	overflow: auto;
+	padding: 5px 0;
+}
+.coluna{
+	padding: 0 10px;
+	float: left;
+}
+.col1{
+	width: 60px;
+}
+.col2{
+	width: 140px;
+}
+.col3{
+	width: 220px;
+}
+.col4{
+	width: 300px;
+}
+.col5{
+	width: 380px;
+}
+.col6{
+	width: 460px;
+}
+.col7{
+	width: 540px;
+}
+.col8{
+	width: 620px;
+}
+.col9{
+	width: 700px;
+}
+.col10{
+	width: 780px;
+}
+.col11{
+	width: 860px;
+}
+.col12{
+	width: 940px;
+}
+/*FimGrid*/
+
+ul, li ol, li{
+	margin-bottom: 5px;
+}
+ul.inline li, ol.inline li{
+	display: inline;
+	margin-right: 15px;
+}
+ul.inline li:last-child, ol.inline li:last-child{
+	margin-right: 0;
+}
+ul.sem-marcador, ol.sem-marcador{
+	list-style: none;
+}
+.menu{
+    text-transform: uppercase;
+    text-align: right;
+    margin-top: 38px;
+	font-size: 17px;
+    font-weight: bold;
+}
+
+.header{
+    background-image: linear-gradient(rgba(20, 20, 20, 100%)0%, rgba(0, 0, 0, 0%));
+    height: 100px;
+    /*box-shadow: 0 50px 100px black;*/
+    color: #B1011E; 
+}
+
+.header nav ul li:hover{
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.conheca{
+    margin-top: 80px;
+    text-align: center;
+
+}
+.conheca img{
+    height: 200px;    
+}
+.titulo{
+    font-size: 45px;
+	color: white;
+	text-transform: capitalize;
+}
+
+.conheca p{
+	font-size: 30px;
+	color: white;
+}
+
+.conheca hr{
+	border: 2px solid #e97f16;
+	width: 400px;	
+	border-radius: 8px;
+}
+
+.produtos i{
+	position: absolute;
+	top: 500px;
+	left: 48%;
+	color: white;
+}
+
+.link{
+	text-decoration: none;
+	color: #e97f16;
+}
+
+.produtos{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	text-align: center;
+	text-transform: capitalize;
+	width: 100%;
+}
+
+.produtos hr{
+	border: 2px solid #e97f16;
+	width: 400px;	
+	border-radius: 8px;
+}
+
+.produtos h2{
+	font-weight: 700;
+	color: white;
+	text-transform: uppercase;
+}
+
+.produtos-especiais{
+	text-align: left;
+	margin-top: 40px;
+	margin-right: 20px;
+	background: #353839;
+	color: white;
+	border-radius: 24px;
+	width: 300px;
+	padding: 0;
+	padding-bottom: 20px;
+}
+
+.nome{
+	margin-top: 10px;
+	text-align: center;
+}
+
+.descricao{
+	font-size: 14px;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+
+.descricao-tamanho{
+	margin: 0;
+}
+
+.descricao-preco{
+	margin: 0;
+	margin-top: 5px;
+}
+
+.card-1{
+	border: 0;
+	object-fit: cover;
+	width: 300px;
+	height: 300px;
+
+	border-radius: 24px 24px 0 0;
+}
+
+.contato{
+	background: rgba(255, 255, 255, 99%);
+	text-align: center;
+	margin-top: 100px;
+	height: 780px;
+}
+
+.contato h2{
+	margin: 0;
+	padding-top: 30px;
+}
+
+input[type=text], input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: none;
+}
+
+input[type=submit] {
+  background-color: #e97f16;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #BF6812;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.column2 {
+  float: right;
+  width: 40%;
+  margin-top: 6px;
+  padding: 20px;
+}
+.formular:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.mapa{
+	position: absolute;
+	left: 40px;
+	top: -180px;
+}
+
+/*Footer*/
+
+.footer-bs {
+    background-color: #3c3d41;
+	padding: 0px 40px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	color: rgba(255,255,255,1.00);
+	border-bottom-right-radius: 6px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 6px;
+}
+.footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { padding:10px 25px; }
+.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-color: transparent; }
+.footer-bs .footer-brand h2 { margin:0px 0px 10px; }
+.footer-bs .footer-brand p { font-size:12px; color:rgba(255,255,255,0.70); }
+
+.footer-bs .footer-nav ul.pages { list-style:none; padding:0px; }
+.footer-bs .footer-nav ul.pages li { padding:5px 0px;}
+.footer-bs .footer-nav ul.pages a { color:rgba(255,255,255,1.00); font-weight:bold; text-transform:uppercase; }
+.footer-bs .footer-nav ul.pages a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
+.footer-bs .footer-nav h4 {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-bottom:10px;
+}
+
+.footer-bs .footer-nav ul.list { list-style:none; padding:0px; }
+.footer-bs .footer-nav ul.list li { padding:5px 0px;}
+.footer-bs .footer-nav ul.list a { color:rgba(255,255,255,0.80); }
+.footer-bs .footer-nav ul.list a:hover { color:rgba(255,255,255,0.60); text-decoration:none; }
+
+.footer-bs .footer-social ul { list-style:none; padding:0px; }
+.footer-bs .footer-social h4 {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.footer-bs .footer-social li { padding:5px 4px;}
+.footer-bs .footer-social a { color:rgba(255,255,255,1.00);}
+.footer-bs .footer-social a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
+
+.footer-bs .footer-ns h4 {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-bottom:10px;
+}
+.footer-bs .footer-ns p { font-size:12px; color:rgba(255,255,255,0.70); }
+
+@media (min-width: 768px) {
+	.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-left:solid 1px rgba(255,255,255,0.10); }
+}
+
+.footer-bs img{
+	width: 200px;
+	margin-left: 25px;
+}

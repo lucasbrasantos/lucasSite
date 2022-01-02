@@ -27,8 +27,9 @@ const iconColors = [
 	icon6 = '#C651F4'
 ]
 
-for (var i = 0; i < iconColors.length; i++) {
-	document.getElementById('icon' + (i + 1)).style.background = iconColors[i];
+for (var i = 0; i < 3; i++) {
+	document.getElementById('icon' + (i + 1)).style.background = iconColors[i]
+	console.log(i)
 }
 
 
@@ -43,3 +44,5 @@ function buttonShake(){
 		}
 	}, 1000)
 }
+
+

@@ -1,0 +1,49 @@
+@media screen and (max-width: 860px){
+
+	header .container{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 40px;
+		font-size: 17px;
+	}
+
+	.nav2{
+		position: absolute;
+		right: 39%;
+		bottom: 80%;
+	}
+}
+
+@media screen and (max-width: 840px){
+
+	.botao{
+		margin-top: 5px;
+		width: 300px;
+	}
+
+	.titulo{
+		text-align: center;
+	}
+}
+
+
+
+@media screen and (min-width: 1000px){
+
+	.descricao{
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 570px){
+
+	header .container{
+		font-size: 13px;
+	}
+
+	.nav2{
+		position: absolute;
+		right: 34%;
+		bottom: 81%;
+	}
+}

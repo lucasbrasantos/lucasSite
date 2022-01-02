@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/normalize.css">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Compras</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="header sticky" id="myHeader">
+			<div class="linha">
+				<header>
+					<div class="coluna col4">
+						<h1 class="titulo">Compras</h1>
+					</div>
+					<div class="coluna col8">
+						<ul class="menu inline">
+							<li>Saldo: $</li>
+							<li><span id="saldo">1000000</span></li>
+						</ul>
+					</div>
+				</header>
+			</div>
+		</div>
+
+		
+		<div class="container">
+
+			<!--primeira linha-->
+			<div class="produtos">
+			<!--primeiro produto-->
+				<div class="item coluna col4">
+					<img src="https://adonaiembalagens.com.br/wp-content/uploads/2020/01/GELO-2.jpeg" alt="">
+					<h4>Gelo</h4>
+					<p>$50</p>
+					<button class="sell" id="a1" onClick="reply_click(this.id)" >SELL</button>
+					<button class="buy" id="a2" onClick="reply_click(this.id)" >BUY</button>
+
+					<p><span id="gelo">0</span></p>
+				</div>
+				<!--segundo produto-->
+				<div class="item coluna col4">
+					<img src="https://cdn.panelinha.com.br/receita/953607600000-Batata-frita-tradicional.jpg" alt="">
+					<h4>Batata Frita</h4>
+					<p>$3</p>
+					<button class="sell" id="b1" onClick="reply_click(this.id)" >SELL</button>
+					<button class="buy" id="b2" onClick="reply_click(this.id)">BUY</button>
+
+					<p><span id="batata_frita">0</span></p>
+				</div>
+				<!--terceiro produto-->
+				<div class="item coluna col4">
+					<img src="https://www.sodexobeneficios.com.br/data/files/0B/72/0F/34/574757102C3B8457930BF9C2/xbeneficios-da-mandioca.jpg.pagespeed.ic.-7Qt1o37bO.jpg" alt="">
+					<h4>Mandioca</h4>
+					<p>$2</p>
+					<button class="sell" id="c1" onClick="reply_click(this.id)">SELL</button>
+					<button class="buy" id="c2" onClick="reply_click(this.id)">BUY</button>
+
+					<p><span id="mandioca">0</span></p>
+				</div>
+			</div>
+
+		<!--segunda linha-->
+			<div class="produtos">
+				<!--primeiro produto-->
+				<div class="item coluna col4">
+					<img src="http://i.mlcdn.com.br/portaldalu/fotosconteudo/12278_01.jpg" alt="">
+					<h4>PS4 Slim</h4>
+					<p>$500</p>
+					<button class="sell" id="d1" onClick="reply_click(this.id)">SELL</button>
+					<button class="buy" id="d2" onClick="reply_click(this.id)">BUY</button>
+
+					<p><span id="ps4_slim">0</span></p>
+				</div>
+				<!--segundo produto-->
+				<div class="item coluna col4">
+					<img src="https://www.havan.com.br/media/catalog/product/cache/73a52df140c4d19dbec2b6c485ea6a50/v/i/video-game-microsoft-xbox-one-s-com-1tb_205947_1.jpg" alt="">
+					<h4>XBoX One S</h4>
+					<p>$450</p>
+					<button class="sell" id="e1" onClick="reply_click(this.id)">SELL</button>
+					<button class="buy" id="e2" onClick="reply_click(this.id)">BUY</button>
+
+					<p><span id="xbox_one">0</span></p>
+				</div>
+				<!--terceiro produto-->
+				<div class="item coluna col4 texto-g ">
+					<img src="https://cdn.awsli.com.br/1000x1000/435/435911/produto/20011805/1ec6ce10d3.jpg" alt="">
+					<h4>O Incrivel homem aranha</h4>
+					<p>$25</p>
+					<button class="sell" id="f1" onClick="reply_click(this.id)">SELL</button>
+					<button class="buy" id="f2" onClick="reply_click(this.id)">BUY</button>
+
+					<p><span id="jogo_aranha">0</span></p>
+				</div>
+			</div>
+
+		<!--terceira linha-->
+			<div class="produtos">
+				<!--primeiro produto-->
+				<div class="item coluna col4 texto-g ">
+					<img src="https://cleopatraweb.com/pub/media/catalog/product/cache/dfffd07ac981d9c590004acae82712e9/s/o/sony_ps4_call_of_duty_modern_warfare_game_cd.jpg" alt="">
+					<h4>Call of duty - modern warfare</h4>
+					<p>$30</p>
+					<button class="sell" id="g1" onClick="reply_click(this.id)">SELL</button>
+					<button class="buy" id="g2" onClick="reply_click(this.id)">BUY</button>
+
+					<p><span id="jogo_call">0</span></p>
+				</div>
+				<!--segundo produto-->
+				<div class="item coluna col4 texto-g ">
+					<img src="img/jogo01.png" alt="">
+					<h4>Free fire original - ps4</h4>
+					<p>$59,99</p>
+					<button class="sell" id="h1" onClick="reply_click(this.id)">SELL</button>
+					<button class="buy" id="h2" onClick="reply_click(this.id)">BUY</button>
+
+					<p><span id="jogo_free_fire">0</span></p>
+				</div>
+				<!--terceiro produto-->
+				<div class="item coluna col4">
+					<img src="https://i.pinimg.com/originals/18/56/31/1856317e0f9d94c25f6342398729acd1.jpg" alt="">
+					<h4>very cool dog</h4>
+					<p>$999</p>
+					<button class="sell" id="i1" onClick="reply_click(this.id)">SELL</button>
+					<button class="buy" id="i2" onClick="reply_click(this.id)">BUY</button>
+
+					<p><span id="very_cool_dog">0</span></p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<footer>
+			<div class="txtFot">
+				<h3><span>&copy; 2021 - Compras | Lucas Braga Santos</span></h3>
+			</div>
+		</footer>
+
+		<!--Scripts-->
+		<script src="js/main.js" type="text/javascript" charset="utf-8" async defer></script>
+	</body>
+</html>
